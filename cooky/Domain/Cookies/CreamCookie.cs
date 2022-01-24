@@ -10,7 +10,7 @@ namespace Domain.Cookies
     {
         public double TotalCream { get; set; }
 
-        public CreamCookie()
+        public CreamCookie() : base()
         {
             var r = new Random();
 

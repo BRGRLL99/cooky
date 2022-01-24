@@ -10,7 +10,7 @@ namespace Domain.Cookies
     {
         public int ChocolateChips { get; set; }
 
-        public ChocolateCookie()
+        public ChocolateCookie() : base()
         {
             var r = new Random();
 

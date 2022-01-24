@@ -8,8 +8,14 @@ namespace Domain.Cookies
 {
     public class Package
     {
-        public int PackageCode { get; set; }
+        public Guid PackageCode { get; set; }
 
         public List<Cookie> Cookies { get; set; }
+
+        public Package(List<Cookie> cookies)
+        {
+            this.PackageCode = Guid.NewGuid();
+            this.Cookies = cookies;
+        }
     }
 }

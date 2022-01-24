@@ -10,7 +10,7 @@ namespace Domain.Cookies
     {
         public bool ActuallyHasRaisins { get; set; }
 
-        public RaisinCookie()
+        public RaisinCookie() : base()
         {
             var r = new Random();
 
